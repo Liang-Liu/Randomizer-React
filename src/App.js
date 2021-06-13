@@ -50,9 +50,9 @@ function App() {
 
 	return (
 		<div className="App max-w-sm mx-auto p-6 font-medium text-center bg-gray-200 rounded-lg shadow-xl">
-			<form className="mb-4" onSubmit={handleSubmit}>
+			<form className="select-none mb-4" onSubmit={handleSubmit}>
 				<input
-					className=" border-2 border-gray-400 p-0.5 text-center font-medium rounded"
+					className="outline-none border-2 border-gray-400 p-0.5 text-center font-medium rounded"
 					id="input"
 					type="text"
 					value={optionContent}
@@ -60,7 +60,7 @@ function App() {
 					placeholder="Add a New Item..."
 				/>
 				<button
-					className="select-none p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
+					className="focus:outline-none ring-2 ring-yellow-500 ring-opacity-50  outline-none select-none p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
 					id="addBtn"
 				>
 					Add
@@ -79,7 +79,7 @@ function App() {
 					>
 						<p className="max-w-ful break-all m-2">{option.optionContent}</p>
 						<button
-							className="select-none mr-1 p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
+							className="focus:outline-none ring-2 ring-yellow-500 ring-opacity-50  outline-none select-none mr-1 p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
 							id="deleteBtn"
 							onClick={() => {
 								deleteBtn(idx);
@@ -92,7 +92,7 @@ function App() {
 			</div>
 
 			<button
-				className="select-none mt-4 font-bold p-2 bg-yellow-200 hover:bg-yellow-400 rounded-xl w-full"
+				className="focus:outline-none ring-2 ring-yellow-500 ring-opacity-50 select-none mt-4 font-bold p-2 bg-yellow-200 hover:bg-yellow-400 rounded-xl w-full"
 				id="startBtn"
 				onClick={handleClick}
 			>
