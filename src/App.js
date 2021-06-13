@@ -60,7 +60,7 @@ function App() {
 					placeholder="Add a New Item..."
 				/>
 				<button
-					className=" p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
+					className="select-none p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
 					id="addBtn"
 				>
 					Add
@@ -79,7 +79,7 @@ function App() {
 					>
 						<p className="max-w-ful break-all m-2">{option.optionContent}</p>
 						<button
-							className="mr-1 p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
+							className="select-none mr-1 p-1 bg-yellow-200 hover:bg-yellow-400 ml-2 rounded font-medium"
 							id="deleteBtn"
 							onClick={() => {
 								deleteBtn(idx);
@@ -92,7 +92,7 @@ function App() {
 			</div>
 
 			<button
-				className="mt-4 font-bold p-2 bg-yellow-200 hover:bg-yellow-400 rounded-xl w-full"
+				className="select-none mt-4 font-bold p-2 bg-yellow-200 hover:bg-yellow-400 rounded-xl w-full"
 				id="startBtn"
 				onClick={handleClick}
 			>
